@@ -18,7 +18,9 @@ public class TestRedis {
 		// 连接redis服务器，192.168.0.100:6379
 		jedis = new Jedis("192.168.68.128", 6379);
 		// 权限认证 沒有密码则不用auth验证
-		// jedis.auth("admin");
+		// redis- /usr/local/redis/etc/redis.conf 指定配置文件运行 里面指定requirepass 密码参数
+		// 使用auth requirepass验证
+		// jedis.auth("666666");
 	}
 
 	/**
